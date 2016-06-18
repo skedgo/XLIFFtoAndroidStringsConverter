@@ -102,7 +102,7 @@ public class StringsGeneratorUtils {
 		// iOS like dir
 		String androidLangDir = lang.replace("-", "-r").replace("Hans", "CN").replace("Hant", "TW");
 
-		if (androidLangDir.equals("") || lang.equals(DEFAULT_LANG)) { // default
+		if (androidLangDir.equals("") || lang.startsWith(DEFAULT_LANG)) { // default
 			// res
 			androidLangDir = "values";
 		} else {
